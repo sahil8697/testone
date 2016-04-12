@@ -1,3 +1,51 @@
-<link rel="stylesheet" href="main.css">
-<h3>todo!</h3>
-<script src="main.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+<link href="bootstrap.css" rel="stylesheet">
+
+
+<link href="bootstrap-responsive.css" rel="stylesheet">
+
+
+<link href='http://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
+<title>todo</title>
+    
+    <script type="text/javascript" src="index.js"></script>
+
+</head>
+<body onload="startTime()"><div class="hero-unit">
+    <center>
+        <h1><font face="verdana" color="maroon">Rem <font color="black">~ </font><font face="Marck Script" color="red">me</font></h1></center><br><br><center><h4><font size=4 face="Marck Script" color="blue">bcoz reminders are important!!.....</font></h4></center></div>
+    <div class="span1"></div>
+    <div class="span10 container">
+      <center>  <form class="form-horizontal" action="#" method="post">
+        <div class="form-group">
+            <label><font size=3 face="verdana">New Task</font></label>
+            <input type="text" placeholder="Enter your text" id="txt" class="form-control">&nbsp&nbsp&nbsp&nbsp&nbsp
+            <input type="button" value="Add" class="btn btn-warning btn-large hidden-phone" onclick="addList('ToDoListTable')">
+             <input type="button" value="Add" class="btn btn-warning btn-large visible-phone" onclick="addList('ToDoListTable2')">
+            <input type="button" value="Delete" class="btn btn-primary btn-large hidden-phone" onclick="deleteList('ToDoListTable')">
+            <input type="button" value="Delete" class="btn btn-primary btn-large visible-phone" onclick="deleteList('ToDoListTable2')"><br><br>
+           <div><font color="black">Current Time: </font><div id="clock"></div>
+          </div></div>
+          
+          
+        </form></center>
+    
+    </div>
+    
+    <div class="span12"><div class="span3"></div>
+    <div class="span7 thumbnail container"><center>
+        <h2><font color="red" face="lucida handwriting" size=5>Tasks to do</font></h2>
+    <table id="ToDoListTable" border="1" cellpadding="25 px" class="hidden-phone"></table>
+    <table id="ToDoListTable2" class="visible-phone"></table></center></div>
+    
+    </center></div><br><br><br><br>
+    
+ <div class="span11 container">
+ <center><font color="maroon" face="verdana"><h6>Created by Sam Solutions(Sahil Apte)</h6></font></center></div>   
+    </body>
+</html>
+    
